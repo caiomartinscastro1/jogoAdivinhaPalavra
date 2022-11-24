@@ -1,0 +1,19 @@
+.wourds {
+    margin: 20px;
+}
+
+.opcions{
+    width: 200px;
+}
+
+.letter {
+    width: 35px;
+    height: 35px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 0px;
+}
+
+.transform-uppercase {
+    text-transform: uppercase;
+}

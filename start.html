@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Advinha a Palavra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body class="h-100 bg-warning body">
+    
+    
+    <div class="container w-75 bg-light mt-5 mx-auto rounded salvar-players">
+        <h1 class="text-center p-4 display-4">Player 1</h1>
+    
+        <div class="form-group">
+            <input class="form-control playername mx-auto my-4 w-75 text-center" type="text" name="player1" id="player1">
+        </div>
+
+        <h1 class="text-center p-4 display-4">Player 2</h1>
+    
+        <div class="form-group">
+            <input class="form-control playername mx-auto my-4 w-75 text-center" type="text" name="player2" id="player2">
+        </div>
+
+        <button onclick="saveNames()" class="btn btn-dark text-light w-50 m-auto buttonInicio">Pronto</button>
+        
+        <span class="m-2"></span>
+    </div>
+
+    <div class="container w-75 bg-light mx-auto my-5 game">
+        <div class="placar">
+            <h1>Placar: </h1>
+            <p>Player 1 <span class="playerNome1 h4"></span>   </p>
+            <p>Player 2 <span class="playerNome2 h4"></span>   </p>
+        </div>
+
+<div class="fim">
+    
+            <h2 class="display-4 player-time text-center">O player 1 começa:<span class="vezPlayer"></span></h2>
+    
+            <div class="words w-75 mx-auto bg-warning p-2 my-5 rounded">
+                <table class="d-flex justify-content-center align-items-center">
+                    <h3 class="text-center">Palavras a serem traduzidas</h3>
+                    <tr>
+                        <td><button onclick="inicioLetras()" class="btn btn-dark opcions">GERAR UMA PALAVRA</button></td>
+                    </tr>
+                </table>
+            </div>
+            <span class="m-2"></span>
+    
+            <div class="inicioLetras w-75 mx-auto">
+    
+                <h2 class="text-center">Digite a tradução da palavra</h2>
+    
+                <h1 class="palavraEscolhida text-center"></h1>
+    
+                <div class="form-group m-2">
+                    <input class="form-control m-2 mx-auto d-block text-light bg-dark transform-uppercase" type="text" name="tela" id="tela">
+                </div>
+    
+    
+    
+                    <span class="m-2"></span>
+    
+                    <button class="btn btn-primary btn-block" onclick="corrigir()">Corrigir</button>
+    
+                    <span class="m-2"></span>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+</div>
+
+
+    <script src="js/code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
